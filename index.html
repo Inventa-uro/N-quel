@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Níquel (Ni) | Infografía interactiva</title>
+<meta name="description" content="Infografía interactiva del níquel: caso Tesla, designación UNS, propiedades mecánicas, aplicaciones y formas de distribución.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav"><a href="#caso">Caso Tesla</a><a href="#uns">Designación</a><a href="#mec">Propiedades</a><a href="#apps">Aplicaciones</a><a href="#dist">Distribución</a></nav>
+
+<header class="hero">
+  <img src="assets/titulo.png" alt="Níquel!" class="titulo">
+  <p class="intro">El níquel (<b>Ni</b>) es un metal brillante plateado-blanco, con un ligero matiz dorado, que se encuentra con una abundancia en la corteza terrestre del <b>0.008&nbsp;%</b>.</p>
+</header>
+
+<main>
+<section id="caso" class="reveal">
+  <h2>Caso de aplicación: baterías de Tesla</h2>
+  <div class="split">
+    <img src="assets/tesla.jpg" alt="Celdas de batería Tesla 4680 y 2170" class="foto zoom">
+    <div>
+      <p>Tesla ha empleado cátodos <b>NCA</b> (Níquel-Cobalto-Aluminio) y, más recientemente, <b>NMC</b> (Níquel-Manganeso-Cobalto) en modelos de mayor autonomía: <b>Model S</b>, <b>Model X</b> y versiones Long Range del <b>Model 3</b>.</p>
+      <div class="tabs" id="chem"></div>
+      <div class="chips" id="chips"></div>
+      <p class="mu" id="chemtx"></p>
+    </div>
+  </div>
+</section>
+
+<section id="uns" class="reveal">
+  <h2>Método de identificación / designación</h2>
+  <div class="split">
+    <div>
+      <p>El <b>Sistema UNS</b> (<i>Unified Numbering System</i>) es el estándar universal en manufactura, establecido por <b>ASTM</b> y <b>SAE</b>. Consta de <b>una letra más cinco dígitos</b> que identifican la composición.</p>
+      <ul class="def">
+        <li><b>UNS:</b> composición.</li>
+        <li><b>ASTM:</b> especificación de forma / proceso.</li>
+        <li><b>W.Nr.:</b> norma europea (DIN).</li>
+      </ul>
+      <p class="mu">Deben coincidir en la documentación de manufactura para trazabilidad y control.</p>
+    </div>
+    <div class="card">
+      <p class="q">¿Cómo se identifica el níquel en la designación UNS?</p>
+      <p class="mu">1) Elige la letra de la familia:</p>
+      <div class="tabs" id="letters"></div>
+      <div class="code" id="code"></div>
+      <p id="unsfb" class="mu" aria-live="polite"></p>
+    </div>
+  </div>
+  <table class="tabla"><thead><tr><th>UNS</th><th>Material</th></tr></thead><tbody id="unsrows"></tbody></table>
+  <div class="split trio">
+    <div class="card"><h3>Equivalencias frecuentes</h3><p>W.Nr. <b>2.4060 / 2.4061 / 2.4066 / 2.4068</b></p></div>
+    <div class="card"><h3>ASTM por forma de producto</h3>
+      <div class="tabs" id="astm"></div><p id="astmtx" class="mu"></p></div>
+  </div>
+</section>
+
+<section id="mec" class="reveal">
+  <h2>Propiedades mecánicas</h2>
+  <p>Dependen de su composición, características metalúrgicas y proceso de fabricación.</p>
+  <div class="split">
+    <div>
+      <div class="meter"><label>Resistencia a la tracción <b>380 a 520 MPa</b></label><div class="track"><i data-a="380" data-b="520"></i></div></div>
+      <div class="meter"><label>Límite de fluencia <b>105 a 210 MPa</b></label><div class="track"><i data-a="105" data-b="210"></i></div></div>
+      <p class="mu small">Escala de 0 a 600 MPa.</p>
+      <div class="acc" id="props"></div>
+    </div>
+    <figure><img src="assets/grafica.png" alt="Gráfica de energía absorbida contra temperatura para níquel y aceros 1010, 1047 y 1063" class="foto zoom"><figcaption class="mu small">Energía absorbida (J) vs. temperatura (°C): el níquel conserva su tenacidad a bajas temperaturas.</figcaption></figure>
+  </div>
+</section>
+
+<section id="apps" class="reveal">
+  <h2>Aplicaciones principales</h2>
+  <div class="grid" id="appgrid"></div>
+</section>
+
+<section id="dist" class="reveal">
+  <h2>Formas de distribución</h2>
+  <p>La forma de distribución se selecciona según el proceso de fabricación y las características del producto final.</p>
+  <div class="split">
+    <img src="assets/distribucion.png" alt="Formas de distribución del níquel" class="foto zoom">
+    <div><div class="tabs vert" id="forms"></div><div class="card" id="formtx"></div></div>
+  </div>
+</section>
+</main>
+
+<div id="lb" role="dialog" aria-label="Imagen ampliada"><img alt=""></div>
+<footer>Níquel · Infografía interactiva</footer>
+<script src="script.js"></script>
+</body>
+</html>
